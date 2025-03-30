@@ -1,4 +1,4 @@
-import { add, subtract } from "./calculator";
+import { add, multiplied, subtract } from "./calculator";
 
 test("add three to two is five", () => {
   // Arrange
@@ -25,3 +25,17 @@ test("subtract four from six is two", () => {
   // Assert
   expect(actual).toBe(expected);
 });
+
+test("multiplie three and two is six", () => {
+  // Arrange
+  const a: number = 3;
+  const b: number = 2;
+  const expected: number = 6;
+
+  // Act
+  const actual: number = multiplied(a, b);
+
+  // Assert
+  expect(actual).toBe(expected);
+});
+
