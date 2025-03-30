@@ -2,10 +2,10 @@ import { mean } from "./average";
 
 test("test mean of two numbers", () => {
   // Arrange
-  const numbers: number[] = [1, 4];
-  const expected: number = 2.5;
+  const numbers: number[] = [2, 6];
+  const expected: number = 4;
 
-  // Act
+  // Acta
   const actual: number = mean(numbers);
 
   // Assert
