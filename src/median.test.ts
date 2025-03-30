@@ -2,7 +2,7 @@ import { median } from "./median";
 
 test("test median for odd number of elements", () => {
     // Arrange
-    const numbers: number[] = [1, 2, 6, 7, 8];
+    const numbers: number[] = [1, 2, 6, 7, 8]; 
     const expected: number = 6;
   
     // Act
@@ -14,8 +14,8 @@ test("test median for odd number of elements", () => {
   
   test("test median for even number of elements", () => {
     // Arrange
-    const numbers: number[] = [1, 2, 5, 6, 7, 8];
-    const expected: number = (5 + 6) / 2;
+    const numbers: number[] = [1, 2, 5, 6, 7, 8, 9, 11];
+    const expected: number = (6 + 7) / 2;
   
     // Act
     const actual: number = median(numbers);
