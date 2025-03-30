@@ -14,7 +14,7 @@ test("test median for odd number of elements", () => {
   
   test("test median for even number of elements", () => {
     // Arrange
-    const numbers: number[] = [1, 2, 5, 6, 7, 8, 9, 11];
+    const numbers: number[] = [1, 2, 5, 7, 6, 9, 8, 11];
     const expected: number = (6 + 7) / 2;
   
     // Act
