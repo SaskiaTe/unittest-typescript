@@ -53,15 +53,12 @@ test("divide eight through two is four", () => {
   expect(actual).toBe(expected);
 });
 
-test("divide eight through zero is zero", () => {
+
+test("divide eight through zero throws an error", () => {
   // Arrange
   const a: number = 8;
   const b: number = 0;
-  const expected: number = 0;
 
-  // Act
-  const actual: number = divide(a, b);
-
-  // Assert
-  expect(actual).toBe(expected);
+  // Act & Assert
+  expect(() => divide(a, b)).toThrow("Division durch 0 ist nicht erlaubt");
 });
